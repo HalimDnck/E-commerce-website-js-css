@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-size: 16px;
+    background-color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*Section-A*/
+.section-a{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-a video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.section-a .top-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*Header*/
+.top-container .header-container{
+    padding: 0 100px;
+    width: 100%;
+    height: 70px;
+    background:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-container .header-container:hover{
+    background: white;
+    transition: all ease 0.5s;
+}
+.top-container .header-container:hover .hamburger{
+    color: black;
+}
+.top-container .header-container:hover .icon-line{
+    background: black;
+}
+.top-container .header-container:hover .logo-img{
+    background-image: url(images/zh-logo-black.png);
+}
+.top-container .header-container:hover .icon-container ul li a{
+    color: black;
+}
+/*hamburger*/
+.nav-container{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-container .hamburger{
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+}
+.hamburger .hamburger-icon div{
+    height: 2px;
+    margin: 6px 0;
+    background: white;
+}
+/*logo*/
+.logo-container{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container .logo-img{
+    width: 70%;
+    height: 60px;
+    background-image: url(images/zh-logo-white.png);
+    background-size: cover;
+    background-position: center;
+}
+/*icons*/
+.icon-container{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icon-container ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icon-container ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/*MAIN*/
+.main-container{
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*left text*/
+.main-container .text-container-1{
+    width: 40%;
+    color: white;
+    
+}
+.text-container-1 #premium{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 300;
+}
+.text-container-1 #zh-watches{
+    font-size: 32px;
+}
+.text-container-1 #main-text{
+    font-size: 24px;
+}
+/*mid watch*/
+.watch-container{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-watch{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/main-watch.png);
+    background-size: cover;
+    background-position: center;
+}
+.main-watch .hour,
+.main-watch .min,
+.main-watch .sec{
+    position: absolute;
+    margin-bottom: 40px;
+}
+.main-watch .hour, .hr{
+    width: 160px;
+    height: 160px;
+}
+.main-watch .min, .mn{
+    width: 230px;
+    height: 230px;
+}
+.main-watch .sec, .sc{
+    width: 270px;
+    height: 270px;
+}
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+/* align-items: center;*/
+    position: absolute;
+    border-radius: 50%;
+    
+}
+.hr:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 80px;
+    background: black;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background: black;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc:before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 170px;
+    background: black;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+/*Section-B*/
+.section-b{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-b .left-content{
+    width: 700px;
+    height: 400px;
+    background-image: url(images/card-bg.png);
+    background-size: cover;
+}
+.section-b .right-content{
+    width: 700px;
+    height: 400px;
+    background-image: url(images/card-bg-2.png);
+    background-size: cover;
+}
+
+/*Section-C*/
+.section-c{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-container a{
+    width: 500px;
+    height: auto;
+}
+.card-container img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: all 1s;
+}
+.card-container img:hover{
+    opacity: 1;
+    height: 110%;
+    width: 110%;
+    transition: all 1s;
+}
+
+/*Footer Section-D*/
+.section-d{
+    padding-top: 20vh;
+    width: 100%;
+    height: 30vh;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    
+    gap: 60px;
+    flex-direction: column;
+}
+.footer-social{
+    font-size: 64px;
+    display: flex;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.2;
+    transition: all 0.5s;
+    
+}
+.twitter:hover{
+    color: #1DA1F2;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.instagram:hover{
+    color: #cd486b;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.facebook:hover{
+    color: #4267B2;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.youtube:hover{
+    color: #FF0000;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.pinterest:hover{
+    color: #E60023;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.footer-policy{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+}
+.footer-policy a{
+    color: grey;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer-policy a:hover{
+    color: white;
+}
+.footer-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 200px;
+    height: 200px;
+}
+.footer-cards {
+    color: grey;
+    font-size: 36px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 10px;
+}
+
+/*Login Form*/
+
+.login-page{
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-container{
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+}
+.form-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+/*logo*/
+.form-logo{
+    align-self: flex-start;
+    width: 100%;
+}
+.form-logo img{
+    width: 12%;
+}
+
+/*form*/
+.form-text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+}
+/*formarea1*/
+.form-area1{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-self: start;
+}
+.form-area1 h1{
+    font-size: 32px;
+}
+.email-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.email-form label{
+    font-size: 16px;
+}
+.email-form input{
+    height: 40px;
+    width: 320px;
+    background: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.password-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.password-form label{
+    font-size: 16px;
+}
+.password-form input{
+    height: 40px;
+    width: 320px;
+    background: none;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/*form area2*/
+.form-area2{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: .8;
+}
+.form-area2 a{
+    color: black;
+}
+
+/*formarea 3*/
+.form-area3{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30%;
+}
+.form-area3 button{
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-area3 a{
+    color: black;
+}
+
+.form-signature{
+    align-self: flex-start;
+    font-size: 14px;
+    opacity: .8;
+}
+.form-signature a{
+    color: black;
+}
+
+/*form image*/
+.form-image{
+    background-image: url(images/form-bg.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 45px;
+    position: absolute;
+    margin-top: -12px;    
+}
+
+/*animation*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
