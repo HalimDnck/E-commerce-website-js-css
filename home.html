@@ -20,7 +20,8 @@
                     <div class="nav-container">
                         <input type="checkbox" id="nav-check" hidden>
                         <nav></nav>
-                        <label for="nav-check" class="hamburger">
+                        <label for="nav-check" class="hamburger"
+                        onclick="document.getElementById('sidenav').style.display='block'">
                             <div class="hamburger-icon">
                                 <div class="icon-line" style="width: 30px"></div>
                                 <div class="icon-line" style="width: 20px"></div>
@@ -40,6 +41,28 @@
                     </div>
                 </div>
 
+                <div class="main-container">
+                    <div class="text-container-1">
+                        <div class="texts">
+                            <p id="premium">THE PREMIUM</p>
+                            <p id="zh-watches">ZH WATCHES</p>
+                            <p id="main-text">Introducing the stylish and sophisticated ZH Watch. Crafted with precision and attention to detail, this wristwatch is the perfect accessory to elevate any outfit. With its sleek design and reliable performance.</p>
+                        </div>
+                    </div>
+                    <div class="watch-container">
+                        <div class="main-watch">
+                            <div class="hour">
+                                <div class="hr" id="hr"></div>
+                            </div>
+                            <div class="min">
+                                <div class="mn" id="mn"></div>
+                            </div>
+                            <div class="sec">
+                                <div class="sc" id="sc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="login-page" id="login-page">
                     <div class="login-container animate" >
@@ -85,36 +108,60 @@
                         </span>
                     </div>
                     </div>
-                </div>    
+                </div>
 
-
-
-                <div class="main-container">
-                    <div class="text-container-1">
-                        <div class="texts">
-                            <p id="premium">THE PREMIUM</p>
-                            <p id="zh-watches">ZH WATCHES</p>
-                            <p id="main-text">Introducing the stylish and sophisticated ZH Watch. Crafted with precision and attention to detail, this wristwatch is the perfect accessory to elevate any outfit. With its sleek design and reliable performance.</p>
+                <div class="sidenav-page" id="sidenav">
+                    <div class="sidenav-container animate-sidebar ">
+                        <div class="sidenav-logo">
+                            <a href="home.html"><img src="images/zh-logo-white.png" alt=""></a>
+                            <span class="nav-close" onclick="document.getElementById('sidenav').style.display='none'">
+                                &times;
+                            </span>
                         </div>
-                    </div>
-                    <div class="watch-container">
-                        <div class="main-watch">
-                            <div class="hour">
-                                <div class="hr" id="hr"></div>
+
+                        <div class="sidenav-content">
+                            <button class="sidenav-login">Login / Sign Up</button>
+                            
+                            <button class="sidenav-dropdown">Collections
+                                <i class="fa-solid fa-caret-right"></i>
+                
+                            </button>
+
+                            <div class="dropdown-container" >
+                                <a href="#">New Features</a>
+                                <a href="#">Most Popular</a>
+                                <a href="#">Collection Name</a>
                             </div>
-                            <div class="min">
-                                <div class="mn" id="mn"></div>
-                            </div>
-                            <div class="sec">
-                                <div class="sc" id="sc"></div>
+                            
+                            <div class="sidenav-content-2">
+                                <a href="">Men's Selection</a>
+                                <a href="">Women's Selection</a>
+                                <hr>
+                                <a href="">About ZH</a>
+                                <a href="">Service Locations</a>
                             </div>
                         </div>
+
+                        <div class="sidenav-social">
+                            <a href="" class="nav-twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="nav-instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="nav-facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="nav-youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="" class="nav-pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+
                     </div>
                 </div>
+                
+                
+
+                
             </div>
 
 
     </section>
+
+
 
     <section class="section-b">
         <a href="" class="left-content">
