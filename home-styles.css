@@ -4,9 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 
 
 body{
@@ -48,7 +46,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
 }
+
 .top-container .header-container:hover{
     background: white;
     transition: all ease 0.5s;
@@ -225,23 +227,17 @@ body{
 /*Section-B*/
 .section-b{
     width: 100%;
-    height: 100vh;
-    padding-top: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 220vh;
+    padding-top: 20vh;
 }
-.section-b .left-content{
-    width: 700px;
-    height: 400px;
-    background-image: url(images/card-bg.png);
+.collection-1{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/collection-1.png);
     background-size: cover;
-}
-.section-b .right-content{
-    width: 700px;
-    height: 400px;
-    background-image: url(images/card-bg-2.png);
-    background-size: cover;
+    background-position: center;
+
+
 }
 
 /*Section-C*/

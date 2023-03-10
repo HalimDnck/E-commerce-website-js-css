@@ -1,3 +1,4 @@
+/*main clock*/
 const deg = 6;
 const hr = document.querySelector("#hr");
 const mn = document.querySelector("#mn");
@@ -13,6 +14,20 @@ setInterval(() => {
     mn.style.transform = `rotateZ(${mm}deg)`;
     sc.style.transform = `rotateZ(${ss}deg)`;
 })
+
+/*header scroll control*/
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hide-header").style.top = "0";
+  } else {
+    document.getElementById("hide-header").style.top = "-80px"; /* adjust this value to the height of your header */
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
 
 
 
